@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfoliosite from Jonas</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- Top navigation bar -->
+    <header class="top-nav">
+      <div class="logo">
+        <h2>Jonas</h2>
+      </div>
+
+      <!-- Hamburger menu button (visible only on mobile) -->
+      <div class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#photo-gallery">Gallery</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main class="content">
+      <!-- Home Section -->
+      <section id="home" class="section">
+        <div class="section-content home-content">
+          <div class="home-text">
+            <h1 class="fade-in">Welcome to my Portfolio</h1>
+            <p class="fade-in delay-1">
+              Hi, I'm Jonas. A student at IMS St. Gallen with a passion for IT
+              and technology.
+            </p>
+            <div class="cta-buttons fade-in delay-2">
+              <a href="#about" class="btn primary-btn">Learn More</a>
+              <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+          </div>
+          <div class="home-image fade-in slide-in-right">
+            <img
+              src="img/portfolio-portrait-white.jpg"
+              alt="Jonas Portrait"
+              class="portrait-img light-mode-img"
+            />
+            <img
+              src="img/portfolio-portrait-dark.png"
+              alt="Jonas Portrait (Dark Mode)"
+              class="portrait-img dark-mode-img"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="section-content">
+          <h2 class="fade-in">About Me</h2>
+          <div class="about-container">
+            <div class="about-profile fade-in delay-1">
+              <div class="profile-header">
+                <h3 class="profile-title">
+                  I'm Jonas Rutz and
+                  <span class="highlight">Student at IMS St. Gallen</span>
+                </h3>
+              </div>
+
+              <div class="profile-description">
+                <p>
+                  My name is Jonas Rutz. I am <span id="age-text"></span> years
+                  old, and I am currently a student at the IMS
+                  (Informatikmittelschule) in St. Gallen since summer 2023. The
+                  IMS program focuses on IT and gives me the chance to explore
+                  my interest in computer science and technology. Besides my
+                  studies, I am very passionate about sports and e-sports.
+                  Physical activity and competition keep me motivated, and in
+                  e-sports, I enjoy the strategic challenges and skills it
+                  requires.
+                </p>
+              </div>
+
+              <div class="profile-stats">
+                <div class="stat-item">
+                  <span class="stat-number"
+                    ><span id="years-at-ims"></span>+</span
+                  >
+                  <span class="stat-label">Years at IMS</span>
+                </div>
+
+                <div class="stat-item">
+                  <span class="stat-number" id="age-stat"></span>
+                  <span class="stat-label">Years Old</span>
+                </div>
+              </div>
+
+              <div class="profile-cta">
+                <a
+                  href="CV/Jonas_Rutz_CV.pdf"
+                  class="cv-download-btn"
+                  id="cvDownloadBtn"
+                >
+                  <i class="fas fa-download"></i> Download CV
+                </a>
+              </div>
+            </div>
+
+            <div class="profile-details fade-in delay-2">
+              <h4
+                style="
+                  margin-bottom: 1.5rem;
+                  color: var(--text-primary);
+                  font-size: 1.5rem;
+                "
+              >
+                Contact Information
+              </h4>
+              <div class="details-grid">
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="fas fa-birthday-cake"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Birthday</span>
+                    <span class="detail-value">June 2008</span>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Website</span>
+                    <span class="detail-value">
+                      <a href="https://jonasrutz.ch/" target="_blank"
+                        >jonasrutz.ch</a
+                      >
+                    </span>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Email</span>
+                    <span class="detail-value">
+                      <a href="mailto:jonas.rutz@jonasrutz.ch"
+                        >jonas.rutz@bluewin.ch</a
+                      >
+                    </span>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">St. Gallen, Switzerland</span>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Education</span>
+                    <span class="detail-value">IMS St. Gallen</span>
+                  </div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Focus</span>
+                    <span class="detail-value">Computer science</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="photo-gallery" class="section">
+        <div class="section-content">
+          <h2 class="fade-in">Photo Gallery</h2>
+          <div class="gallery-grid fade-in delay-1">
+            <div class="gallery-item gallery-item-1" data-index="0">
+              <img
+                src="https://via.placeholder.com/400x300/2563eb/ffffff?text=Photo+1"
+                alt="Gallery Image 1"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-number">1</span>
+              </div>
+            </div>
+            <div class="gallery-item gallery-item-2" data-index="1">
+              <img
+                src="https://via.placeholder.com/400x500/10b981/ffffff?text=Photo+2"
+                alt="Gallery Image 2"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-number">2</span>
+              </div>
+            </div>
+            <div class="gallery-item gallery-item-3" data-index="2">
+              <img
+                src="https://via.placeholder.com/400x600/8b5cf6/ffffff?text=Photo+3"
+                alt="Gallery Image 3"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-number">3</span>
+              </div>
+            </div>
+            <div class="gallery-item gallery-item-4" data-index="3">
+              <img
+                src="https://via.placeholder.com/600x400/f59e0b/ffffff?text=Photo+4"
+                alt="Gallery Image 4"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-number">4</span>
+              </div>
+            </div>
+            <div class="gallery-item gallery-item-5" data-index="4">
+              <img
+                src="https://via.placeholder.com/400x300/ef4444/ffffff?text=Photo+5"
+                alt="Gallery Image 5"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-number">5</span>
+              </div>
+            </div>
+            <div class="gallery-item gallery-item-6" data-index="5">
+              <img
+                src="https://via.placeholder.com/400x500/3b82f6/ffffff?text=Photo+6"
+                alt="Gallery Image 6"
+              />
+              <div class="gallery-overlay">
+                <span class="gallery-number">6</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lightbox Modal -->
+      <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+          <img id="lightbox-img" src="" alt="Lightbox Image" />
+        </div>
+        <div class="lightbox-navigation">
+          <button class="lightbox-nav-btn lightbox-prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="lightbox-thumbnails">
+            <div class="thumbnail-item" data-index="0"></div>
+            <div class="thumbnail-item" data-index="1"></div>
+            <div class="thumbnail-item" data-index="2"></div>
+            <div class="thumbnail-item" data-index="3"></div>
+          </div>
+          <button class="lightbox-nav-btn lightbox-next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- CV Password Modal -->
+      <div id="passwordModal" class="password-modal">
+        <div class="password-modal-content">
+          <span class="close-modal">&times;</span>
+          <h3>Password Required</h3>
+          <p>Please enter the password to download the CV.</p>
+          <div class="password-form">
+            <input
+              type="password"
+              id="cvPassword"
+              placeholder="Enter password"
+            />
+            <button id="submitPassword" class="btn primary-btn">Confirm</button>
+          </div>
+          <p id="passwordError" class="password-error"></p>
+        </div>
+      </div>
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="section">
+        <div class="section-content">
+          <h2 class="fade-in">My Projects</h2>
+
+          <!-- Filter Buttons -->
+          <div class="portfolio-filters fade-in delay-1">
+            <button class="filter-btn active" data-filter="all">
+              <i class="fas fa-th"></i> All Projects
+            </button>
+            <button class="filter-btn" data-filter="jobs">
+              <i class="fas fa-briefcase"></i> Jobs
+            </button>
+            <button class="filter-btn" data-filter="school">
+              <i class="fas fa-graduation-cap"></i> School
+            </button>
+            <!-- removed private projects filter -->
+          </div>
+
+          <!-- Single horizontal scroll container for all projects -->
+          <div class="portfolio-showcase fade-in delay-2">
+            <div class="horizontal-scroll-container">
+              <div class="project-cards-wrapper">
+                <div class="project-card" data-category="school">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url(img/projects/portfolio-site-picture.png);
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <div class="card-category">School</div>
+                    <h4 class="project-title">portfolio-project</h4>
+                    <p class="project-description">
+                      My first school project was to create this portfolio
+                      website.
+                    </p>
+                    <div class="project-actions">
+                      <a
+                        href="https://github.com/jonasrutz?tab=repositories"
+                        target="_blank"
+                        class="btn secondary-btn project-btn"
+                      >
+                        <i class="fab fa-github"></i> GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Auftrage (jobs) project card -->
+                <div class="project-card" data-category="jobs">
+                  <div
+                    class="card-image"
+                    style="
+                      background-image: url('img/projects/siope-btg-picture.png');
+                    "
+                  ></div>
+                  <div class="card-content">
+                    <div class="card-category">Jobs</div>
+                    <h4 class="project-title">Client Project</h4>
+                    <p class="project-description">
+                      A client commission: development of a lean, responsive
+                      website using WordPress.
+                    </p>
+                    <div class="project-actions">
+                      <a
+                        href="https://siope-btg.eu/"
+                        target="_blank"
+                        class="btn primary-btn project-btn"
+                      >
+                        <i class="fas fa-folder-open"></i> Live Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="section-content">
+          <h2 class="fade-in">My Skills</h2>
+          <div class="skills-container">
+            <div class="skill-category slide-in-left delay-1">
+              <h3>What I'm Learning</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fab fa-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-js"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-microsoft"></i>
+                  <span>C#</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category slide-in-right delay-2">
+              <h3>Tools</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fas fa-mobile-alt"></i>
+                  <span>SCSS</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-git-alt"></i>
+                  <span>Git</span>
+                </div>
+                <div class="skill-item">
+                  <i class="fab fa-figma"></i>
+                  <span>Figma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="section-content">
+          <h2 class="fade-in">Get In Touch</h2>
+          <div class="contact-container">
+            <div class="contact-form slide-in-right delay-2">
+              <form
+                id="contactForm"
+                action="https://formspree.io/f/xgvaerez"
+                method="POST"
+              >
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">
+                  Send Message
+                </button>
+              </form>
+              <div id="formSubmitMessage" class="form-submit-message">
+                <p>Thank you! I'll respond as soon as possible.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer with copyright -->
+    <footer class="footer fade-in">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="mailto:jonas.rutz@bluewin.ch" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://github.com/jonasrutz"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jonas-rutz-711903346/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="copyright">
+          &copy; <span id="current-year"></span> Jonas Rutz. All rights
+          reserved. &nbsp;|&nbsp; <a href="impressum.html">Impressum</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

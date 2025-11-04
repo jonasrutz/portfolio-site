@@ -1,0 +1,106 @@
+/* Impressum page styles — matches main theme variables in style.css */
+:root {
+  /* fallback colors if variables not loaded */
+  --primary-blue: #2563eb;
+  --text-secondary: #6b7280;
+  --bg-primary: #ffffff;
+  --border-color: #e5e7eb;
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Page layout */
+body > section {
+  max-width: 980px;
+  margin: 4rem auto;
+  padding: 2.25rem;
+  background: linear-gradient(180deg, var(--bg-primary), #f8fafc);
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+  font-family: inherit;
+}
+
+/* Headings */
+body > section h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-blue);
+}
+
+body > section h2 {
+  font-size: 1.15rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+/* Address */
+address {
+  display: inline-block;
+  font-style: normal;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Links */
+body > section a {
+  color: var(--primary-blue);
+  text-decoration: underline;
+}
+
+/* Liability list */
+ol {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+ol li {
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+ol li strong {
+  display: block;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+/* Small note at bottom */
+body > section p.note {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Back link */
+.back-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.22s ease;
+}
+.back-link:hover {
+  transform: translateY(-3px);
+  color: var(--primary-blue);
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+/* Mobile adjustments */
+@media (max-width: 700px) {
+  body > section {
+    margin: 2rem 1rem;
+    padding: 1.25rem;
+  }
+  body > section h1 {
+    font-size: 1.6rem;
+  }
+}
