@@ -3,16 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfoliosite from Jonas</title>
+
+    <!-- SEO Meta Tags -->
+    <title>
+      Jonas Rutz - Portfolio | IMS St. Gallen Student | Web Developer
+    </title>
+    <meta
+      name="description"
+      content="Portfolio of Jonas Rutz, a passionate IT student at IMS St. Gallen specializing in web development, Python, HTML, CSS, JavaScript, and C#. Explore my projects and skills."
+    />
+    <meta
+      name="keywords"
+      content="Jonas Rutz, portfolio, web developer, IMS St. Gallen, student, HTML, CSS, JavaScript, Python, C#, programming, IT, Switzerland, St. Gallen"
+    />
+    <meta name="author" content="Jonas Rutz" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Open Graph Meta Tags (Social Media) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Jonas Rutz - Portfolio | Web Developer & IT Student"
+    />
+    <meta
+      property="og:description"
+      content="Explore the portfolio of Jonas Rutz, an IT student at IMS St. Gallen with expertise in web development and programming."
+    />
+    <meta property="og:url" content="https://jonasrutz.ch/" />
+    <meta property="og:site_name" content="Jonas Rutz Portfolio" />
+    <meta
+      property="og:image"
+      content="https://jonasrutz.ch/img/portfolio-portrait-white.jpg"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Jonas Rutz - Portfolio | Web Developer & IT Student"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore the portfolio of Jonas Rutz, an IT student at IMS St. Gallen with expertise in web development and programming."
+    />
+    <meta
+      name="twitter:image"
+      content="https://jonasrutz.ch/img/portfolio-portrait-white.jpg"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jonasrutz.ch/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
-    <!-- Top navigation bar -->
+    <!-- ============================= HEADER / NAVIGATION ============================= -->
     <header class="top-nav">
       <div class="logo">
         <h2>Jonas</h2>
@@ -35,9 +91,9 @@
       </nav>
     </header>
 
-    <!-- Main content area -->
+    <!-- ============================= MAIN CONTENT AREA ============================= -->
     <main class="content">
-      <!-- Home Section -->
+      <!-- ============================= HOME SECTION ============================= -->
       <section id="home" class="section">
         <div class="section-content home-content">
           <div class="home-text">
@@ -65,7 +121,8 @@
           </div>
         </div>
       </section>
-      <!-- About Section -->
+
+      <!-- ============================= ABOUT SECTION ============================= -->
       <section id="about" class="section">
         <div class="section-content">
           <h2 class="fade-in">About Me</h2>
@@ -109,6 +166,7 @@
               <div class="profile-cta">
                 <a
                   href="CV/Jonas_Rutz_CV.pdf"
+                  target="_blank"
                   class="cv-download-btn"
                   id="cvDownloadBtn"
                 >
@@ -195,27 +253,17 @@
           </div>
         </div>
       </section>
+
+      <!-- ============================= PHOTO GALLERY SECTION ============================= -->
       <section id="photo-gallery" class="section">
         <div class="section-content">
           <h2 class="fade-in">Photo Gallery</h2>
           <div class="gallery-grid fade-in delay-1">
             <div class="gallery-item gallery-item-1" data-index="0">
-              <img
-                src="https://via.placeholder.com/400x300/2563eb/ffffff?text=Photo+1"
-                alt="Gallery Image 1"
-              />
-              <div class="gallery-overlay">
-                <span class="gallery-number">1</span>
-              </div>
+              <img src="img/gallery/gaming.jpg" alt="Gallery Image 1" />
             </div>
             <div class="gallery-item gallery-item-2" data-index="1">
-              <img
-                src="https://via.placeholder.com/400x500/10b981/ffffff?text=Photo+2"
-                alt="Gallery Image 2"
-              />
-              <div class="gallery-overlay">
-                <span class="gallery-number">2</span>
-              </div>
+              <img src="img/gallery/chapel.jpg" alt="Gallery Image 2" />
             </div>
             <div class="gallery-item gallery-item-3" data-index="2">
               <img
@@ -227,81 +275,42 @@
               </div>
             </div>
             <div class="gallery-item gallery-item-4" data-index="3">
-              <img
-                src="https://via.placeholder.com/600x400/f59e0b/ffffff?text=Photo+4"
-                alt="Gallery Image 4"
-              />
-              <div class="gallery-overlay">
-                <span class="gallery-number">4</span>
-              </div>
+              <img src="img/gallery/mountain.jpg" alt="Gallery Image 4" />
             </div>
             <div class="gallery-item gallery-item-5" data-index="4">
-              <img
-                src="https://via.placeholder.com/400x300/ef4444/ffffff?text=Photo+5"
-                alt="Gallery Image 5"
-              />
-              <div class="gallery-overlay">
-                <span class="gallery-number">5</span>
-              </div>
+              <img src="img/gallery/programming.jpg" alt="Gallery Image 5" />
             </div>
             <div class="gallery-item gallery-item-6" data-index="5">
-              <img
-                src="https://via.placeholder.com/400x500/3b82f6/ffffff?text=Photo+6"
-                alt="Gallery Image 6"
-              />
-              <div class="gallery-overlay">
-                <span class="gallery-number">6</span>
-              </div>
+              <img src="img/gallery/cat.jpg" alt="Gallery Image 6" />
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Lightbox Modal -->
+      <!-- ============================= LIGHTBOX MODAL ============================= -->
       <div id="lightbox" class="lightbox">
         <span class="lightbox-close">&times;</span>
-        <div class="lightbox-content">
-          <img id="lightbox-img" src="" alt="Lightbox Image" />
-        </div>
-        <div class="lightbox-navigation">
-          <button class="lightbox-nav-btn lightbox-prev">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <div class="lightbox-thumbnails">
-            <div class="thumbnail-item" data-index="0"></div>
-            <div class="thumbnail-item" data-index="1"></div>
-            <div class="thumbnail-item" data-index="2"></div>
-            <div class="thumbnail-item" data-index="3"></div>
+        <div class="lightbox-container">
+          <div class="lightbox-image-section">
+            <img id="lightbox-img" src="" alt="Lightbox Image" />
           </div>
-          <button class="lightbox-nav-btn lightbox-next">
-            <i class="fas fa-chevron-right"></i>
-          </button>
+          <div class="lightbox-info-section">
+            <h3 id="lightbox-title">Image Title</h3>
+            <div class="lightbox-description">
+              <p id="lightbox-description">
+                Image description will appear here...
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- CV Password Modal -->
-      <div id="passwordModal" class="password-modal">
-        <div class="password-modal-content">
-          <span class="close-modal">&times;</span>
-          <h3>Password Required</h3>
-          <p>Please enter the password to download the CV.</p>
-          <div class="password-form">
-            <input
-              type="password"
-              id="cvPassword"
-              placeholder="Enter password"
-            />
-            <button id="submitPassword" class="btn primary-btn">Confirm</button>
-          </div>
-          <p id="passwordError" class="password-error"></p>
-        </div>
-      </div>
-      <!-- Portfolio Section -->
+      <!-- ============================= PORTFOLIO SECTION ============================= -->
       <section id="portfolio" class="section">
         <div class="section-content">
           <h2 class="fade-in">My Projects</h2>
 
-          <!-- Filter Buttons -->
+          <!-- Project Filter Buttons -->
           <div class="portfolio-filters fade-in delay-1">
             <button class="filter-btn active" data-filter="all">
               <i class="fas fa-th"></i> All Projects
@@ -312,13 +321,13 @@
             <button class="filter-btn" data-filter="school">
               <i class="fas fa-graduation-cap"></i> School
             </button>
-            <!-- removed private projects filter -->
           </div>
 
-          <!-- Single horizontal scroll container for all projects -->
+          <!-- Project Cards Container -->
           <div class="portfolio-showcase fade-in delay-2">
             <div class="horizontal-scroll-container">
               <div class="project-cards-wrapper">
+                <!-- Portfolio Project Card -->
                 <div class="project-card" data-category="school">
                   <div
                     class="card-image"
@@ -335,7 +344,7 @@
                     </p>
                     <div class="project-actions">
                       <a
-                        href="https://github.com/jonasrutz?tab=repositories"
+                        href="https://github.com/jonasrutz/portfolio-site"
                         target="_blank"
                         class="btn secondary-btn project-btn"
                       >
@@ -345,7 +354,7 @@
                   </div>
                 </div>
 
-                <!-- Auftrage (jobs) project card -->
+                <!-- Client Project Card -->
                 <div class="project-card" data-category="jobs">
                   <div
                     class="card-image"
@@ -377,7 +386,7 @@
         </div>
       </section>
 
-      <!-- Skills Section -->
+      <!-- ============================= SKILLS SECTION ============================= -->
       <section id="skills" class="section">
         <div class="section-content">
           <h2 class="fade-in">My Skills</h2>
@@ -429,7 +438,7 @@
         </div>
       </section>
 
-      <!-- Contact Section -->
+      <!-- ============================= CONTACT SECTION ============================= -->
       <section id="contact" class="section">
         <div class="section-content">
           <h2 class="fade-in">Get In Touch</h2>
@@ -470,7 +479,7 @@
       </section>
     </main>
 
-    <!-- Footer with copyright -->
+    <!-- ============================= FOOTER SECTION ============================= -->
     <footer class="footer fade-in">
       <div class="footer-content">
         <div class="social-links">
@@ -499,7 +508,7 @@
       </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- ============================= JAVASCRIPT ============================= -->
     <script src="js/script.js"></script>
   </body>
 </html>
