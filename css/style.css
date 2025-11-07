@@ -85,7 +85,7 @@ svg {
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   width: 100%;
 }
 
@@ -226,6 +226,7 @@ p {
   padding: 0 2rem;
   transition: all 0.3s ease;
   gap: 1rem;
+  overflow-y: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -287,6 +288,7 @@ p {
     var(--accent-purple)
   );
   transition: width 0.3s ease;
+  overflow-y: hidden;
 }
 
 .nav-links a:hover::after {
@@ -3545,6 +3547,28 @@ p {
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {
+  :root {
+    --border-color: var(--text-primary);
+  }
+
+  .btn {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+high {
   :root {
     --border-color: var(--text-primary);
   }
